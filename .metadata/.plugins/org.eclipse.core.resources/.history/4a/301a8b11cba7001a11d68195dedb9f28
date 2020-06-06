@@ -1,0 +1,26 @@
+
+public class NumberSystem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = 100;
+		System.out.println(BinToDec(num));//4
+      
+	}
+	
+	public static int BinToDec(int bin) {
+		int num = bin;
+		int dec = 0;
+		int temp = num;
+		int base = 1; //Starting base is 2^0=1
+		while(temp > 0) {
+			int last_digit = temp%10; //To get the last digit of binary number
+			temp = temp/10; //remove that last digit for the binary number
+			dec += last_digit * base;
+			
+			base = base*2;
+		}
+		return (dec);
+	}
+
+}
