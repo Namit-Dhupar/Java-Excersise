@@ -22,7 +22,7 @@ public class NumberSystem {
 			dec += last_digit * base;
 			base = base*2;
 		}
-		return (dec);
+		return (dec); 
 	}
 	
 	public static int DecToBin(int dec) {

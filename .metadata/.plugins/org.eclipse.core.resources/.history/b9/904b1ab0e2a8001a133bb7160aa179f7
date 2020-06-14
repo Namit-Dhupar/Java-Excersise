@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Pract {
+	 public static void main(String []argh){
+	        Scanner in = new Scanner(System.in);
+	        int base =1;
+	        int j;
+	        int t=in.nextInt();
+	        for(int i=1;i<=t;i++){
+	        int a = in.nextInt();
+	        int b = in.nextInt();
+	        int n = in.nextInt();
+	        int res=0;
+	        for (j = 1; j <= n ; j++)  
+		    {
+		    res += base * b; 
+		    base = base * 2;
+	        System.out.print(a+res+" ");
+		    }
+	        System.out.println();
+	        }
+	        in.close();
+	 }
+}

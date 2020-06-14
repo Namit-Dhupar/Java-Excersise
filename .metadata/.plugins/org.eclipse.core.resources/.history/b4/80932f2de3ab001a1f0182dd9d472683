@@ -1,0 +1,18 @@
+
+public class SwapValues {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] arr = {1,2,3,4,5};
+		System.out.println("Before Swap, the array: "+arr);
+		swapArray(arr, 3,4);
+		System.out.println("After Swap, the array: "+arr);
+ 
+	}
+	public static void swapArray(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+
+}
