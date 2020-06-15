@@ -1,9 +1,0 @@
-import java.util.Scanner;
-public class Pract {
-	 public static void main(String []argh){
-	        Scanner in = new Scanner(System.in);
-	        String line = in.nextLine();
-	        System.out.println(line);
-	        in.close();
-	 }
-}

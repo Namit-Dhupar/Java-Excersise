@@ -10,7 +10,7 @@ public class ArrayExcersise {
         //search(arr,5);
 		//reverse(arr,0,arr.length-1);
 		//display(arr);
-		System.out.println(BinarySearch(arr, 5));
+		System.out.println(BinarySearch(arr, 20));
 	}
 	//Taking Input of an array
 	public static int[] takeInput() {

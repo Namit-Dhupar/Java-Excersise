@@ -10,7 +10,7 @@ public class ArrayExcersise {
         //search(arr,5);
 		//reverse(arr,0,arr.length-1);
 		//display(arr);
-		System.out.println(BinarySearch(arr, 5));
+		System.out.println(BinarySearch(arr,5));
 	}
 	//Taking Input of an array
 	public static int[] takeInput() {
@@ -79,22 +79,21 @@ public class ArrayExcersise {
    }
 	
    //Array Binary Search
-	public static int BinarySearch(int[] arr, int element) {
-		int index = -1;
+	public static int BinarySearch(int[] arr, int x) {
+		int index = 0;
 		int left = 0;
-		int right = arr.length - 1;
-		while (left <= right) {
-			int mid = (left + right) / 2;
-			if (arr[mid] == element) {
-				index = mid;
+		int right = arr.length-1;
+		int m = left+right/2;
+		while(left<=right) {
+			if(arr[m] == x)
+			{
+				index = m;
 				break;
 			}
-			if (arr[mid] < element) {
-				left = mid + 1;
-			}
-			if (arr[mid] > element) {
-				right = mid - 1;
-			}
+			if(arr[m] < x )
+				left = m+1;
+			else
+				right = m-1;
 		}
 		return index;
 	}
