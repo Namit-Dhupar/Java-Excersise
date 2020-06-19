@@ -31,14 +31,6 @@ public class SortingAlgo {
         int n = arr2.length; 
         System.out.println("Intersection is:");
         intersection(arr1, arr2, m, n);
-        /********SUM PAIR IS*************/
-        System.out.println("The Sum Pair is");
-        sumpair(arr,8);
-        /********************************/
-        /********SUM TRIPLE IS*************/
-        System.out.println("The Sum Triple is");
-        sumtriplet(arr,8);
-        /********************************/
 	}
     public static int[] takeInput() {
     	Scanner inp = new Scanner(System.in);
@@ -115,30 +107,12 @@ public class SortingAlgo {
     		else if(arr1[i]>arr2[j])
     			j++;
     		else if(arr1[i]==arr2[j]) {
-    			System.out.print(arr2[j++]+ " ");
+    			System.out.print(arr2[j++]+ " "+arr1[i++]);
     			i++;
+    			j++;
     		}
     	}
     }
     
-    public static void sumpair(int[] arr, int target) {
-    	for(int i=0 ; i<arr.length ; i++) {
-    		for(int j=i+1; j<arr.length; j++) {
-    			if(arr[i]+arr[j] == target)
-    				System.out.println(arr[i]+" & "+arr[j]);
-    		}
-    	}
-    }
-    
-    public static void sumtriplet(int[] arr, int target) {
-    	for(int i=0 ; i<arr.length ; i++) {
-    		for(int j=i+1; j<arr.length; j++) {
-    			for(int k=j ; k<arr.length ; k++) {
-    			if(arr[i]+arr[j] +arr[k] == target)
-    				System.out.println(arr[i]+" & "+arr[j]+" & "+arr[k]);
-    			}
-    		}
-    	}
-    }
     
 }

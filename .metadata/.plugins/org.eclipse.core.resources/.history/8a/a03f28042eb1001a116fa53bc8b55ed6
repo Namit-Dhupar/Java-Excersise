@@ -1,0 +1,19 @@
+import java.util.*;;
+public class JavaArraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Arraylist is used to make an array dynamic
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Enter the number of elements you want in the Arraylist");
+		int n = inp.nextInt();
+		ArrayList<Integer> arrli = new ArrayList<Integer>(n); //Defining an arraylist
+		for(int i=1 ; i<=n ; i++) {
+			arrli.add(i);
+		}
+		System.out.print(arrli+" ");
+		inp.close();
+
+	}
+
+}
