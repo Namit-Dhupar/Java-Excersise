@@ -8,9 +8,9 @@ public class ArrayExcersise {
 		//max(arr);
 		//min(arr);
         //search(arr,5);
-		//reverse(arr,0,arr.length-1);
-		//display(arr);
-		System.out.println(BinarySearch(arr, 5));
+		reverse(arr,0,arr.length-1);
+		display(arr);
+		//System.out.println(BinarySearch(arr, 5));
 	}
 	//Taking Input of an array
 	public static int[] takeInput() {
